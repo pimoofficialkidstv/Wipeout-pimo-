@@ -1,0 +1,27 @@
+{
+  "name": "Wipeout Pimo - 3D Obstacle Runner",
+  "short_name": "Wipeout Pimo",
+  "description": "Fun 3D obstacle course runner with custom maps, avatars, and Xbox/Google Play achievements!",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#0f172a",
+  "theme_color": "#34A853",
+  "icons": [
+    {
+      "src": "https://picsum.photos/seed/moro/192/192",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://picsum.photos/seed/moro/512/512",
+      "sizes": "512x512",
+      "type": "image/png"
+    },
+    {
+      "src": "https://picsum.photos/seed/moro/512/512",
+      "sizes": "512x512",
+      "type": "image/png",
+      "purpose": "any maskable"
+    }
+  ]
+}

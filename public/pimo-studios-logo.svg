@@ -1,0 +1,65 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1000 500" width="100%" height="100%">
+  <defs>
+    <!-- Filter for subtle depth -->
+    <filter id="drop-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="0" dy="8" stdDeviation="6" flood-color="#000000" flood-opacity="0.45" />
+    </filter>
+    <filter id="letter-shadow" x="-10%" y="-10%" width="130%" height="130%">
+      <feDropShadow dx="4" dy="8" stdDeviation="3" flood-color="#500000" flood-opacity="0.6" />
+    </filter>
+  </defs>
+
+  <!-- Deep Crimson Background -->
+  <rect width="1000" height="500" rx="24" fill="#8B0000" />
+
+  <!-- PIMO Logo Group -->
+  <g transform="translate(50, 40)" filter="url(#drop-shadow)">
+    
+    <!-- === LETTER P (with Apple Stem and Leaf) === -->
+    <g class="letter-p">
+      <!-- Brown Apple Stem -->
+      <path d="M178,25 C176,14 186,6 200,2 C196,16 189,24 184,32 Z" fill="#8B4513" stroke="#5C2E0B" stroke-width="2" />
+      
+      <!-- Bright Green Apple Leaf -->
+      <path d="M174,28 C160,20 156,6 166,-2 C178,8 178,20 174,28 Z" fill="#22C55E" stroke="#15803D" stroke-width="2" />
+      
+      <!-- P Outer Body -->
+      <path d="M85,55 L215,35 C245,35 275,60 270,110 C265,155 235,178 185,182 L150,185 L145,285 L85,280 Z" 
+            fill="#FF0000" stroke="#D90000" stroke-width="3" />
+      
+      <!-- P Inner Hole Cutout -->
+      <polygon points="148,85 198,78 208,125 148,138" fill="#8B0000" stroke="#5C0000" stroke-width="2" />
+    </g>
+
+    <!-- === LETTER I === -->
+    <g class="letter-i">
+      <path d="M290,48 L420,44 L415,100 L385,102 L385,228 L415,230 L410,285 L285,288 L290,232 L320,230 L320,102 L290,100 Z" 
+            fill="#FF0000" stroke="#D90000" stroke-width="3" />
+    </g>
+
+    <!-- === LETTER M === -->
+    <g class="letter-m">
+      <path d="M445,45 L505,42 L565,175 L625,40 L685,42 L665,285 L605,285 L615,135 L565,245 L515,245 L475,135 L475,285 L425,285 Z" 
+            fill="#FF0000" stroke="#D90000" stroke-width="3" />
+    </g>
+
+    <!-- === LETTER O (Octagonal Chunky) === -->
+    <g class="letter-o">
+      <!-- O Outer Octagon -->
+      <polygon points="735,42 845,42 895,95 895,235 845,288 735,288 685,235 685,95" 
+               fill="#FF0000" stroke="#D90000" stroke-width="3" />
+      <!-- O Inner Octagonal Hole -->
+      <polygon points="758,95 822,95 848,125 848,205 822,235 758,235 732,205 732,125" 
+               fill="#8B0000" stroke="#5C0000" stroke-width="2" />
+    </g>
+  </g>
+
+  <!-- === "Studios" TEXT === -->
+  <text x="500" y="435" 
+        text-anchor="middle" 
+        fill="#000000" 
+        font-family="'Fredoka', 'Montserrat', 'Inter', sans-serif" 
+        font-size="140" 
+        font-weight="900" 
+        letter-spacing="-1px">Studios</text>
+</svg>

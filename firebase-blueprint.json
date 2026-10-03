@@ -1,0 +1,85 @@
+{
+  "entities": {
+    "User": {
+      "title": "User",
+      "description": "User profile data",
+      "type": "object",
+      "properties": {
+        "name": { "type": "string" },
+        "username": { "type": "string" },
+        "avatar": { "type": "object" },
+        "status": { "type": "string" },
+        "lastSeen": { "type": "integer" }
+      },
+      "required": ["name", "username"]
+    },
+    "Message": {
+      "title": "Message",
+      "description": "A chat message",
+      "type": "object",
+      "properties": {
+        "text": { "type": "string" },
+        "senderId": { "type": "string" },
+        "receiverId": { "type": "string" },
+        "timestamp": { "type": "integer" }
+      },
+      "required": ["text", "senderId", "receiverId", "timestamp"]
+    },
+    "FriendRequest": {
+      "title": "FriendRequest",
+      "description": "A friend request",
+      "type": "object",
+      "properties": {
+        "senderId": { "type": "string" },
+        "receiverId": { "type": "string" },
+        "status": { "type": "string" },
+        "timestamp": { "type": "integer" }
+      },
+      "required": ["senderId", "receiverId", "status", "timestamp"]
+    },
+    "Room": {
+      "title": "Room",
+      "description": "A multiplayer game room",
+      "type": "object",
+      "properties": {
+        "players": {
+          "type": "array",
+          "description": "List of players in the room"
+        },
+        "status": {
+          "type": "string",
+          "enum": ["waiting", "playing"],
+          "description": "Current status of the room"
+        },
+        "mapName": {
+          "type": "string",
+          "description": "Name of the map being played"
+        },
+        "createdAt": {
+          "type": "string",
+          "format": "date-time",
+          "description": "When the room was created"
+        }
+      },
+      "required": ["players", "status", "createdAt"]
+    }
+  },
+  "firestore": {
+    "/users/{userId}": {
+      "schema": "User",
+      "description": "User profiles"
+    },
+    "/chats/{chatId}/messages/{messageId}": {
+      "schema": "Message",
+      "description": "Chat messages between users"
+    },
+    "/friendRequests/{requestId}": {
+      "schema": "FriendRequest",
+      "description": "Pending and past friend requests"
+    },
+    "/rooms/{roomId}": {
+      "schema": "Room",
+      "description": "Multiplayer game rooms"
+    }
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "name": "Wipeout pimo challenge",
+  "description": "Help pimo navigate the rainbow hills! Avoid cheeky Glimmer Stars and obstacles in this high-energy 3D wipeout challenge. Customize your pimo, connect with friends, and conquer the hills together!",
+  "requestFramePermissions": [
+    "camera",
+    "microphone",
+    "payment",
+    "gamepad"
+  ],
+  "majorCapabilities": [
+    "MAJOR_CAPABILITY_SERVER_SIDE_GEMINI_API"
+  ]
+}

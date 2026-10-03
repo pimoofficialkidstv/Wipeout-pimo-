@@ -1,0 +1,296 @@
+674:  const [isDarkMode, setIsDarkMode] = useState(() => localStorage.getItem('moro_dark_mode') !== 'false');
+705:      document.documentElement.classList.add('dark');
+708:      document.documentElement.classList.remove('dark');
+711:    localStorage.setItem('moro_dark_mode', isDarkMode.toString());
+1563:      <div className={`min-h-screen w-full flex flex-col items-center text-slate-900 dark:text-slate-100 relative overflow-x-hidden py-12 transition-colors duration-1000 ${
+1565:          ? 'bg-gradient-to-br from-[#FFD700] via-[#FDB931] to-[#D4AF37] dark:from-[#926239] dark:via-[#8a5d2d] dark:to-[#483017]' 
+1566:          : 'bg-slate-50 dark:bg-[#0a0a0f]'
+1578:              : 'bg-slate-900/40 border-slate-900/20 dark:bg-white/5 dark:border-white/10 text-slate-500'
+1588:                <span className="text-slate-900 dark:text-white">{connectedController.id.split('(')[0].trim()}</span>
+1620:            <h1 className="text-8xl md:text-9xl font-fredoka tracking-tighter text-slate-900 dark:text-white text-center mb-12 drop-shadow-[0_0_40px_rgba(168,85,247,0.3)]">
+1629:                className="relative flex-1 w-full md:w-auto overflow-hidden bg-slate-900/10 dark:bg-white/10 backdrop-blur-2xl border border-white/40 text-slate-900 dark:text-white font-fredoka text-4xl px-12 py-8 rounded-[2.5rem] shadow-[0_8px_32px_rgba(255,255,255,0.15)] hover:bg-slate-900/20 dark:bg-white/20 hover:border-white/60 hover:shadow-[0_16px_48px_rgba(255,255,255,0.25)] hover:scale-105 active:scale-95 transition-all duration-300 group"
+1649:                  className="relative flex-1 overflow-hidden bg-amber-500/10 dark:bg-amber-500/20 backdrop-blur-2xl border border-amber-300/40 text-slate-900 dark:text-white font-fredoka text-4xl px-12 py-8 rounded-[2.5rem] shadow-[0_8px_32px_rgba(245,158,11,0.15)] hover:bg-amber-500/20 dark:bg-amber-500/30 hover:border-amber-300/60 hover:shadow-[0_16px_48px_rgba(245,158,11,0.25)] hover:scale-105 active:scale-95 transition-all duration-300"
+1686:                  className="absolute top-4 right-4 z-20 w-12 h-12 rounded-full bg-white/20 dark:bg-black/20 backdrop-blur-md border border-white/30 flex items-center justify-center hover:scale-110 active:scale-90 transition-all opacity-0 group-hover/classic:opacity-100"
+1709:                    <div className="absolute -top-1 -right-1 bg-purple-600 rounded-full p-0.5 border border-slate-900/20 dark:border-white/20">
+1710:                      <i className="fa-solid fa-lock text-[8px] text-slate-900 dark:text-white"></i>
+1718:                className="text-white/60 font-fredoka text-2xl hover:text-slate-900 dark:text-white transition-all flex items-center gap-2"
+1735:          <div className="fixed inset-0 z-[100] bg-white/90 dark:bg-black/90 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in duration-300">
+1736:            <div className="bg-slate-50 dark:bg-slate-900 border border-slate-900/20 dark:border-white/20 rounded-[3rem] p-10 max-w-md w-full text-center shadow-2xl">
+1742:                  <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-4">Wait are you new in this game 🎮?</h3>
+1743:                  <p className="text-slate-500 dark:text-slate-400 mb-6">Well, welcome and you need to verify your email📨!</p>
+1750:                    className="w-full bg-white/50 dark:bg-black/50 border border-slate-900/10 dark:border-white/10 rounded-2xl px-6 py-4 text-slate-900 dark:text-white font-fredoka text-xl mb-4 focus:outline-none focus:border-blue-500 transition-colors"
+1763:                        className="flex-1 bg-blue-600 hover:bg-blue-500 text-slate-900 dark:text-white font-fredoka text-xl py-4 rounded-2xl transition-all"
+1773:                        className="flex-1 bg-slate-900/10 dark:bg-white/10 hover:bg-slate-900/20 dark:bg-white/20 text-slate-900 dark:text-white font-fredoka text-xl py-4 rounded-2xl transition-all"
+1791:                  <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-4">Are you sure?</h3>
+1792:                  <p className="text-slate-500 dark:text-slate-400 mb-8">You won't be able to verify your email later.</p>
+1801:                      className="flex-1 bg-red-600 hover:bg-red-500 text-slate-900 dark:text-white font-fredoka text-xl py-4 rounded-2xl transition-all"
+1807:                      className="flex-1 bg-slate-900/10 dark:bg-white/10 hover:bg-slate-900/20 dark:bg-white/20 text-slate-900 dark:text-white font-fredoka text-xl py-4 rounded-2xl transition-all"
+1819:          <div className="fixed inset-0 z-[100] bg-white/90 dark:bg-black/90 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in duration-300">
+1820:            <div className="bg-slate-50 dark:bg-slate-900 border border-slate-900/20 dark:border-white/20 rounded-[3rem] p-10 max-w-md w-full text-center shadow-2xl">
+1824:              <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-4">{getTranslation('UNLOCK_EDITOR_TITLE', language)}</h3>
+1825:              <p className="text-slate-500 dark:text-slate-400 mb-8">{getTranslation('UNLOCK_EDITOR_DESC', language)}</p>
+1836:                      ? 'bg-purple-600 text-slate-900 dark:text-white shadow-[0_6px_0_#581c87] hover:translate-y-1 active:translate-y-3 active:shadow-none' 
+1837:                      : 'bg-slate-900/5 dark:bg-white/5 text-slate-500 cursor-not-allowed border border-slate-900/10 dark:border-white/10'
+1845:                  className="w-full text-slate-500 dark:text-slate-400 font-fredoka py-4 hover:text-slate-900 dark:text-white transition-all"
+1855:          <div className="fixed inset-0 z-[100] flex items-center justify-center p-4 bg-white/90 dark:bg-slate-950/90 backdrop-blur-xl animate-in fade-in duration-300">
+1856:            <div className="bg-slate-50 dark:bg-slate-900 border border-slate-900/10 dark:border-white/10 w-full max-w-2xl rounded-[3rem] overflow-hidden shadow-2xl animate-in zoom-in-95 duration-300">
+1863:                    <h2 className="text-3xl font-fredoka text-slate-900 dark:text-white">MORO BUX STORE</h2>
+1864:                    <p className="text-slate-500 dark:text-slate-400 text-sm font-fredoka">Get more Morobux and Plus perks!</p>
+1869:                  className="w-12 h-12 rounded-2xl bg-slate-900/5 dark:bg-white/5 flex items-center justify-center text-slate-900 dark:text-white hover:bg-slate-900/10 dark:bg-white/10 transition-all"
+1877:                <div className="bg-slate-900/5 dark:bg-white/5 border border-slate-900/10 dark:border-white/10 p-6 rounded-[2rem] flex flex-col items-center text-center hover:bg-slate-900/10 dark:bg-white/10 transition-all group">
+1881:                  <h3 className="text-2xl font-fredoka text-slate-900 dark:text-white mb-1">500 MOROBUX</h3>
+1882:                  <p className="text-slate-500 dark:text-slate-400 text-sm mb-6 font-fredoka">Boost your balance instantly!</p>
+1885:                    className="w-full bg-slate-900 dark:bg-white text-slate-900 font-fredoka py-4 rounded-2xl shadow-[0_4px_0_#cbd5e1] hover:translate-y-1 active:translate-y-2 transition-all"
+1899:                  <h3 className="text-2xl font-fredoka text-slate-900 dark:text-white mb-1">MORO PLUS</h3>
+1900:                  <p className="text-slate-500 dark:text-slate-400 text-sm mb-6 font-fredoka">{getTranslation('MORO_PLUS_DESC', language)}</p>
+1903:                    className="w-full bg-purple-600 text-slate-900 dark:text-white font-fredoka py-4 rounded-2xl shadow-[0_4px_0_#4c1d95] hover:translate-y-1 active:translate-y-2 transition-all"
+1910:              <div className="p-8 bg-slate-900/5 dark:bg-white/5 text-center">
+1920:          <div className="fixed inset-0 z-[120] flex items-center justify-center p-4 bg-white/80 dark:bg-black/80 backdrop-blur-sm animate-in fade-in duration-300">
+1921:            <div className="bg-slate-900 dark:bg-white rounded-3xl p-6 max-w-sm w-full text-center shadow-2xl animate-in zoom-in-95 duration-300">
+1932:                className="w-full bg-blue-600 text-slate-900 dark:text-white font-fredoka py-4 rounded-2xl hover:bg-blue-500 transition-all shadow-[0_4px_0_#1e40af] active:translate-y-1 active:shadow-none"
+1942:            <div className="bg-slate-900 dark:bg-white w-full max-w-lg rounded-t-[1.5rem] md:rounded-[0.5rem] overflow-hidden shadow-2xl animate-in slide-in-from-bottom duration-300">
+1965:                    <img src="https://picsum.photos/seed/moro/100/100" alt="Moro" className="w-16 h-16 rounded-2xl border-2 border-slate-900/20 dark:border-white/20" referrerPolicy="no-referrer" />
+1967:                      <h4 className="text-xl font-fredoka text-slate-900 dark:text-white">{getTranslation('MORO_CHALLENGE_TITLE', language)}</h4>
+1968:                      <p className="text-slate-500 dark:text-slate-400 text-xs">{getTranslation('AISTUDIO_URL', language)}</p>
+1972:                    <p className="text-slate-900 dark:text-white font-fredoka text-xl">{pendingPurchase.price}</p>
+1977:                <div className="bg-slate-900/5 dark:bg-white/5 rounded-3xl p-6 border border-slate-900/10 dark:border-white/10">
+1979:                    <span className="text-slate-500 dark:text-slate-400">{pendingPurchase.name}</span>
+1980:                    <span className="text-slate-900 dark:text-white font-fredoka">{pendingPurchase.price}</span>
+1999:                    className={`w-full p-6 rounded-3xl border transition-all flex items-center justify-between ${paymentMethod === 'paysafecard' ? 'bg-blue-600/20 border-blue-500 text-blue-400' : 'bg-slate-900/5 dark:bg-white/5 border-slate-900/10 dark:border-white/10 text-slate-500 dark:text-slate-400'}`}
+2012:                    className={`w-full p-6 rounded-3xl border transition-all flex items-center justify-between ${paymentMethod === 'google_pay' ? 'bg-blue-600/20 border-blue-500 text-blue-400' : 'bg-slate-900/5 dark:bg-white/5 border-slate-900/10 dark:border-white/10 text-slate-500 dark:text-slate-400'}`}
+2028:                      className={`p-4 rounded-2xl border text-xs transition-all ${googlePayCard === 'revolut' ? 'bg-purple-600/20 border-purple-500 text-purple-400' : 'bg-slate-900/5 dark:bg-white/5 border-slate-900/10 dark:border-white/10 text-slate-500'}`}
+2034:                      className={`p-4 rounded-2xl border text-xs transition-all ${googlePayCard === 'default' ? 'bg-purple-600/20 border-purple-500 text-purple-400' : 'bg-slate-900/5 dark:bg-white/5 border-slate-900/10 dark:border-white/10 text-slate-500'}`}
+2049:                      className="w-full bg-slate-900/5 dark:bg-white/5 border border-slate-900/10 dark:border-white/10 rounded-2xl p-4 text-center text-xl tracking-widest text-slate-700 outline-none focus:border-blue-500 transition-colors"
+2062:                      className="w-full bg-slate-900/5 dark:bg-white/5 border border-slate-900/10 dark:border-white/10 rounded-2xl p-4 text-center text-xl tracking-widest text-slate-700 outline-none focus:border-blue-500 transition-colors"
+2073:                <div className="pt-4 border-t border-slate-900/10 dark:border-white/10">
+2076:                    className="w-full bg-blue-600 text-slate-900 dark:text-white font-fredoka py-6 rounded-3xl hover:bg-blue-500 transition-all shadow-[0_6px_0_#1e40af] active:translate-y-1 active:shadow-none mb-4"
+2146:          <div className="fixed inset-0 z-[100] bg-white/90 dark:bg-black/90 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in duration-300">
+2147:            <div className="bg-slate-50 dark:bg-slate-900 border border-slate-900/20 dark:border-white/20 rounded-[3rem] p-8 max-w-md w-full shadow-2xl relative max-h-[90vh] flex flex-col">
+2150:                className="absolute top-6 right-6 w-10 h-10 bg-slate-900/10 dark:bg-white/10 rounded-full flex items-center justify-center text-slate-900 dark:text-white hover:bg-slate-900/20 dark:bg-white/20 transition-all z-10"
+2159:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-2 text-center">{getTranslation('MAP_CLASSES', language)}</h3>
+2160:                <p className="text-slate-500 dark:text-slate-400 text-center mb-6 font-fredoka">{getTranslation('MAP_CLASSES_DESC', language)}</p>
+2164:                <div className={`flex items-center justify-between p-4 rounded-2xl border ${trophies >= 0 ? 'bg-slate-900/5 dark:bg-white/5 border-slate-900/10 dark:border-white/10' : 'bg-black/20 border-white/5 opacity-50'}`}>
+2167:                      <i className="fa-solid fa-star text-slate-500 dark:text-slate-400"></i>
+2170:                      <span className="font-fredoka text-xl text-slate-600 dark:text-slate-300 block">Common</span>
+2176:                    <span className="text-xs font-bold text-slate-500 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full">TIER 1</span>
+2180:                <div className={`flex items-center justify-between p-4 rounded-2xl border ${trophies >= 50 ? 'bg-slate-900/5 dark:bg-white/5 border-slate-900/10 dark:border-white/10' : 'bg-black/20 border-white/5 opacity-50'}`}>
+2196:                <div className={`flex items-center justify-between p-4 rounded-2xl border ${trophies >= 150 ? 'bg-slate-900/5 dark:bg-white/5 border-slate-900/10 dark:border-white/10' : 'bg-black/20 border-white/5 opacity-50'}`}>
+2199:                      <i className="fa-solid fa-medal text-slate-600 dark:text-slate-300"></i>
+2208:                    <span className="text-xs font-bold text-slate-500 dark:text-slate-400 bg-slate-100 dark:bg-slate-800 px-3 py-1 rounded-full">TIER 3</span>
+2212:                <div className={`flex items-center justify-between p-4 rounded-2xl border ${trophies >= 300 ? 'bg-slate-900/5 dark:bg-white/5 border-slate-900/10 dark:border-white/10' : 'bg-black/20 border-white/5 opacity-50'}`}>
+2228:                <div className={`flex items-center justify-between p-4 rounded-2xl border ${trophies >= 500 ? 'bg-slate-900/5 dark:bg-white/5 border-slate-900/10 dark:border-white/10' : 'bg-black/20 border-white/5 opacity-50'}`}>
+2244:                <div className={`flex items-center justify-between p-4 rounded-2xl border ${trophies >= 1000 ? 'bg-slate-900/5 dark:bg-white/5 border-slate-900/10 dark:border-white/10' : 'bg-black/20 border-white/5 opacity-50'}`}>
+2268:                        <div className="bg-slate-900 dark:bg-white text-slate-900 px-3 py-1.5 rounded-xl rounded-br-none text-[8px] font-fredoka shadow-xl relative max-w-[120px]">
+2270:                          <div className="absolute -bottom-1 right-0 w-2 h-2 bg-slate-900 dark:bg-white rotate-45"></div>
+2285:          <div className="fixed top-10 left-1/2 -translate-x-1/2 z-[110] bg-green-500 text-slate-900 dark:text-white px-8 py-4 rounded-2xl font-fredoka text-xl shadow-2xl animate-in fade-in slide-in-from-top-4 duration-500 flex items-center gap-3">
+2296:                  className="bg-slate-900/10 dark:bg-white/10 backdrop-blur-md border border-slate-900/20 dark:border-white/20 text-slate-900 dark:text-white font-fredoka px-4 py-2 rounded-xl hover:bg-slate-900/20 dark:bg-white/20 transition-all flex items-center justify-center text-xl shadow-lg"
+2302:                  className="bg-slate-900/10 dark:bg-white/10 backdrop-blur-md border border-slate-900/20 dark:border-white/20 text-slate-900 dark:text-white font-fredoka px-4 py-2 rounded-xl hover:bg-slate-900/20 dark:bg-white/20 transition-all flex items-center justify-center text-xl shadow-lg relative"
+2306:                    <span className="absolute -top-1 -right-1 bg-red-500 text-white text-[10px] w-5 h-5 rounded-full flex items-center justify-center border-2 border-slate-50 dark:border-slate-900 animate-bounce">
+2313:                  className="bg-slate-900/10 dark:bg-white/10 backdrop-blur-md border border-slate-900/20 dark:border-white/20 text-slate-900 dark:text-white font-fredoka px-4 py-2 rounded-xl hover:bg-slate-900/20 dark:bg-white/20 transition-all flex items-center gap-3 text-xs group shadow-lg"
+2316:                    <div className="w-8 h-8 rounded-full bg-slate-100 dark:bg-slate-800 overflow-hidden border-2 border-slate-900/20 dark:border-white/20 flex items-center justify-center">
+2325:                        <i className="fa-solid fa-square-plus text-[10px] text-slate-900 dark:text-white drop-shadow-md"></i>
+2342:                    className="absolute top-12 left-0 md:left-4 bg-slate-900/90 dark:bg-white/90 backdrop-blur-md rounded-2xl p-2 flex flex-col gap-2 z-50 border border-slate-900/20 dark:border-white/20 shadow-2xl"
+2346:                      className="flex items-center gap-2 text-white dark:text-slate-900 font-fredoka px-4 py-2 hover:bg-white/10 dark:hover:bg-slate-900/10 rounded-xl transition-all text-xs"
+2359:                      className="flex items-center gap-2 text-white dark:text-slate-900 font-fredoka px-4 py-2 hover:bg-white/10 dark:hover:bg-slate-900/10 rounded-xl transition-all text-xs"
+2366:                      className="flex items-center gap-2 text-white dark:text-slate-900 font-fredoka px-4 py-2 hover:bg-white/10 dark:hover:bg-slate-900/10 rounded-xl transition-all text-xs"
+2373:                      className="flex items-center gap-2 text-white dark:text-slate-900 font-fredoka px-4 py-2 hover:bg-white/10 dark:hover:bg-slate-900/10 rounded-xl transition-all text-xs"
+2380:                      className="flex items-center gap-2 text-white dark:text-slate-900 font-fredoka px-4 py-2 hover:bg-white/10 dark:hover:bg-slate-900/10 rounded-xl transition-all text-xs"
+2391:               <div className="absolute -bottom-2 -right-2 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md border border-slate-900/20 dark:border-white/20 px-4 py-2 rounded-xl text-slate-900 dark:text-white font-black text-xs shadow-xl">{getTranslation('READY', language)}</div>
+2407:                className="group relative bg-slate-900/10 dark:bg-white/10 backdrop-blur-xl border border-slate-900/20 dark:border-white/20 text-slate-900 dark:text-white font-fredoka text-3xl py-8 rounded-[2.5rem] shadow-2xl hover:bg-slate-900/20 dark:bg-white/20 transition-all hover:scale-105 active:scale-95 overflow-hidden"
+2414:                <div className="absolute -bottom-4 -right-4 w-16 h-16 bg-slate-900/10 dark:bg-white/10 rounded-full blur-xl group-hover:bg-slate-900/20 dark:bg-white/20 transition-all"></div>
+2415:                <div className="absolute -top-4 -left-4 w-16 h-16 bg-slate-900/10 dark:bg-white/10 rounded-full blur-xl group-hover:bg-slate-900/20 dark:bg-white/20 transition-all"></div>
+2423:                className="group relative bg-amber-500/10 dark:bg-amber-500/20 backdrop-blur-xl border border-amber-500/30 text-slate-900 dark:text-white font-fredoka text-3xl py-8 rounded-[2.5rem] shadow-2xl hover:bg-amber-500/20 dark:bg-amber-500/30 transition-all hover:scale-105 active:scale-95 overflow-hidden"
+2445:                    className="bg-slate-900/5 dark:bg-white/5 backdrop-blur-md border border-slate-900/10 dark:border-white/10 text-slate-900 dark:text-white font-fredoka py-6 rounded-3xl hover:bg-slate-900/10 dark:bg-white/10 transition-all flex items-center justify-center gap-2 relative group overflow-hidden shadow-xl"
+2452:                  <button onClick={() => { setGameState(GameState.MARKETPLACE); playSound(800); }} className="bg-slate-900/5 dark:bg-white/5 backdrop-blur-md border border-slate-900/10 dark:border-white/10 text-slate-900 dark:text-white font-fredoka py-6 rounded-3xl hover:bg-slate-900/10 dark:bg-white/10 transition-all flex items-center justify-center gap-2 group overflow-hidden relative shadow-xl">
+2481:                  <div className="bg-slate-900/5 dark:bg-white/5 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-4 rounded-3xl flex flex-col items-center justify-center shadow-lg hover:bg-slate-900/10 dark:bg-white/10 transition-all group">
+2482:                    <span className="text-[10px] font-black text-slate-500 uppercase group-hover:text-slate-500 dark:text-slate-400 transition-colors">{getTranslation('BEST', language)}</span>
+2483:                    <span className="text-slate-900 dark:text-white font-fredoka text-2xl">{highScore}m</span>
+2485:                  <div className="bg-slate-900/5 dark:bg-white/5 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-4 rounded-3xl flex flex-col items-center justify-center shadow-lg hover:bg-slate-900/10 dark:bg-white/10 transition-all group">
+2486:                    <span className="text-[10px] font-black text-slate-500 uppercase group-hover:text-slate-500 dark:text-slate-400 transition-colors">{getTranslation('MOROBUX', language)}</span>
+2491:                  <div className="bg-slate-900/5 dark:bg-white/5 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-4 rounded-3xl flex flex-col items-center justify-center shadow-lg hover:bg-slate-900/10 dark:bg-white/10 transition-all group">
+2492:                    <span className="text-[10px] font-black text-slate-500 uppercase group-hover:text-slate-500 dark:text-slate-400 transition-colors">MIKETS</span>
+2499:                    className="bg-slate-900/5 dark:bg-white/5 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-4 rounded-3xl flex flex-col items-center justify-center shadow-lg hover:bg-slate-900/10 dark:bg-white/10 transition-all group overflow-hidden"
+2501:                    <span className="text-[10px] font-black text-slate-500 uppercase group-hover:text-slate-500 dark:text-slate-400 transition-colors">
+2534:            <div className="bg-white dark:bg-slate-900 border border-slate-900/20 dark:border-white/20 rounded-[3rem] p-10 max-w-2xl w-full shadow-2xl relative overflow-hidden">
+2549:                    <h2 className="text-4xl font-fredoka text-slate-900 dark:text-white mb-4">
+2552:                    <p className="text-slate-500 dark:text-slate-400 mb-8 text-lg">
+2558:                        className="flex-1 bg-slate-900/10 dark:bg-white/10 text-slate-900 dark:text-white font-fredoka py-5 rounded-2xl text-xl hover:bg-slate-900/20 dark:bg-white/20 transition-all"
+2564:                        className="flex-1 bg-blue-600 text-slate-900 dark:text-white font-fredoka py-5 rounded-2xl text-xl shadow-[0_6px_0_#1e40af] hover:translate-y-1 active:translate-y-3 active:shadow-none transition-all"
+2580:                    <h2 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-8 text-center flex items-center justify-center gap-3">
+2589:                          className={`p-6 rounded-3xl border-2 transition-all flex flex-col items-center gap-3 ${kartVehicle === v ? 'bg-blue-600/20 border-blue-500 shadow-lg scale-105' : 'bg-slate-900/5 dark:bg-white/5 border-slate-900/10 dark:border-white/10 hover:bg-slate-900/10 dark:bg-white/10'}`}
+2592:                          <span className="font-fredoka text-lg text-slate-900 dark:text-white">{getTranslation(v, language)}</span>
+2600:                        className="flex-1 bg-slate-900/10 dark:bg-white/10 text-slate-900 dark:text-white font-fredoka py-4 rounded-2xl text-lg"
+2606:                        className="flex-1 bg-blue-600 text-slate-900 dark:text-white font-fredoka py-4 rounded-2xl text-lg shadow-[0_6px_0_#1e40af] hover:translate-y-1 active:translate-y-3 active:shadow-none transition-all"
+2622:                    <h2 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-8 text-center flex items-center justify-center gap-3">
+2631:                          className={`p-6 rounded-3xl border-2 transition-all flex flex-col items-center gap-3 ${kartHelmet === h ? 'bg-purple-600/20 border-purple-500 shadow-lg scale-105' : 'bg-slate-900/5 dark:bg-white/5 border-slate-900/10 dark:border-white/10 hover:bg-slate-900/10 dark:bg-white/10'}`}
+2633:                          <div className="w-16 h-16 bg-slate-900/10 dark:bg-white/10 rounded-full flex items-center justify-center relative overflow-hidden">
+2637:                          <span className="font-fredoka text-xs text-slate-900 dark:text-white text-center">{getTranslation(h, language)}</span>
+2644:                        className="flex-1 bg-slate-900/10 dark:bg-white/10 text-slate-900 dark:text-white font-fredoka py-4 rounded-2xl text-lg"
+2654:                        className="flex-1 bg-green-600 text-slate-900 dark:text-white font-fredoka py-4 rounded-2xl text-lg shadow-[0_6px_0_#166534] hover:translate-y-1 active:translate-y-3 active:shadow-none transition-all"
+2724:            <h2 className={`text-7xl font-fredoka mb-8 drop-shadow-[0_0_40px_rgba(239,68,68,0.5)] ${showWinCelebration ? 'text-yellow-400' : 'text-slate-900 dark:text-white'}`}>
+2727:            <div className="bg-slate-900/5 dark:bg-white/5 border border-slate-900/10 dark:border-white/10 rounded-[3rem] p-12 w-full mb-12 flex flex-col items-center backdrop-blur-md relative overflow-hidden">
+2749:               <p className="text-lg italic text-slate-600 dark:text-slate-300 text-center">"{tip}"</p>
+2752:               <button onClick={() => { setShowWinCelebration(false); setGameState(GameState.PLAYING); playSound(800); }} className="flex-1 bg-red-600 text-slate-900 dark:text-white font-fredoka text-3xl py-8 rounded-[2.5rem] shadow-[0_10px_0_#991b1b] hover:translate-y-1 active:translate-y-4 transition-all">{getTranslation('RETRY', language)}</button>
+2753:               <button onClick={() => { setShowWinCelebration(false); setGameState(GameState.MENU); playSound(1000); }} className="bg-slate-900/10 dark:bg-white/10 text-slate-900 dark:text-white font-fredoka text-2xl px-12 py-8 rounded-[2.5rem]">{getTranslation('MENU', language)}</button>
+2766:          <div className="fixed inset-0 z-[100] bg-white/90 dark:bg-slate-950/90 backdrop-blur-2xl flex flex-col items-center justify-center animate-in fade-in duration-500">
+2767:            <div className="absolute top-1/4 bg-slate-900 dark:bg-white text-slate-900 px-6 py-3 rounded-full font-bold text-2xl animate-bounce">
+2788:                  className="bg-slate-900/10 dark:bg-white/10 backdrop-blur-md border border-slate-900/20 dark:border-white/20 p-4 rounded-2xl hover:bg-slate-900/20 dark:bg-white/20 transition-all shadow-lg"
+2792:                <h2 className="text-5xl font-fredoka text-slate-900 dark:text-white">{getTranslation('SELECT_MAP', language)}</h2>
+2820:                className="group relative bg-gradient-to-br from-emerald-600/20 to-teal-600/20 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-8 rounded-[2.5rem] hover:border-emerald-500/50 transition-all text-left shadow-xl"
+2826:                  <div className="absolute top-4 right-4 bg-slate-50/80 dark:bg-slate-900/80 backdrop-blur-md p-3 rounded-full border border-slate-900/20 dark:border-white/20 z-20">
+2827:                    <i className="fa-solid fa-lock text-slate-500 dark:text-slate-400 text-sm"></i>
+2830:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-2 flex items-center gap-3">
+2837:                    <span className="bg-slate-200 dark:bg-slate-700 text-slate-500 dark:text-slate-400 text-[10px] px-2 py-0.5 rounded-full flex items-center gap-1 opacity-50">
+2842:                <p className="text-slate-500 dark:text-slate-400 font-fredoka">{getTranslation('PLAY_TO_EARN', language)}</p>
+2868:                className="group relative bg-gradient-to-br from-blue-600/20 to-purple-600/20 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-8 rounded-[2.5rem] hover:border-blue-500/50 transition-all text-left overflow-hidden shadow-xl"
+2873:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-2">{getTranslation('MAP_DUO', language)}</h3>
+2874:                <p className="text-slate-500 dark:text-slate-400 font-fredoka">{getTranslation('INVITE_FRIEND_DESC', language)}</p>
+2887:                className="group relative bg-gradient-to-br from-yellow-600/20 to-orange-600/20 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-8 rounded-[2.5rem] hover:border-yellow-500/50 transition-all text-left overflow-hidden shadow-xl"
+2892:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-2">{getTranslation('MAP_OF_MOROBUX', language)}</h3>
+2893:                <p className="text-slate-500 dark:text-slate-400 font-fredoka">{getTranslation('MAP_OF_MOROBUX_DESC', language)}</p>
+2906:                className="group relative bg-gradient-to-br from-amber-500/20 to-yellow-500/20 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-8 rounded-[2.5rem] hover:border-amber-400/50 transition-all text-left overflow-hidden shadow-xl"
+2911:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-2">{getTranslation('MAP_OF_MIKETS', language)}</h3>
+2912:                <p className="text-slate-500 dark:text-slate-400 font-fredoka">{getTranslation('MAP_OF_MIKETS_DESC', language)}</p>
+2925:                className="group relative bg-gradient-to-br from-red-600/20 to-slate-600/20 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-8 rounded-[2.5rem] hover:border-red-500/50 transition-all text-left overflow-hidden shadow-xl"
+2930:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-2">{getTranslation('AGAINST_THE_BOT', language)}</h3>
+2931:                <p className="text-slate-500 dark:text-slate-400 font-fredoka">{getTranslation('AGAINST_THE_BOT_DESC', language)}</p>
+2944:                className="group relative bg-gradient-to-br from-orange-600/20 to-yellow-800/20 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-8 rounded-[2.5rem] hover:border-orange-500/50 transition-all text-left overflow-hidden shadow-xl"
+2949:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-2">{getTranslation('MAP_DESERT', language) || 'DESERT MAP'}</h3>
+2950:                <p className="text-slate-500 dark:text-slate-400 font-fredoka">{getTranslation('MAP_DESERT_DESC', language) || 'Hot sands and prickly obstacles!'}</p>
+2963:                className="group relative bg-gradient-to-br from-green-600/20 to-emerald-800/20 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-8 rounded-[2.5rem] hover:border-green-500/50 transition-all text-left overflow-hidden shadow-xl"
+2968:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-2">{getTranslation('MAP_JUNGLE', language) || 'JUNGLE MAP'}</h3>
+2969:                <p className="text-slate-500 dark:text-slate-400 font-fredoka">{getTranslation('MAP_JUNGLE_DESC', language) || 'Swing through the dense jungle!'}</p>
+2982:                className="group relative bg-gradient-to-br from-cyan-600/20 to-blue-800/20 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-8 rounded-[2.5rem] hover:border-cyan-500/50 transition-all text-left overflow-hidden shadow-xl"
+2987:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-2">{getTranslation('MAP_ICE_CAVE', language) || 'ICE CAVE MAP'}</h3>
+2988:                <p className="text-slate-500 dark:text-slate-400 font-fredoka">{getTranslation('MAP_ICE_CAVE_DESC', language) || 'Slippery ice and freezing challenges!'}</p>
+3001:                className="group relative bg-gradient-to-br from-red-600/20 to-orange-800/20 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-8 rounded-[2.5rem] hover:border-red-500/50 transition-all text-left overflow-hidden shadow-xl"
+3006:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-2">{getTranslation('MAP_VOLCANO', language) || 'VOLCANO MAP'}</h3>
+3007:                <p className="text-slate-500 dark:text-slate-400 font-fredoka">{getTranslation('MAP_VOLCANO_DESC', language) || 'Lava pits and red-hot obstacles!'}</p>
+3020:                className="group relative bg-gradient-to-br from-blue-400/20 to-cyan-800/20 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-8 rounded-[2.5rem] hover:border-blue-400/50 transition-all text-left overflow-hidden shadow-xl"
+3025:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-2">{getTranslation('MAP_CRYSTAL_CAVES', language) || 'CRYSTAL CAVES'}</h3>
+3026:                <p className="text-slate-500 dark:text-slate-400 font-fredoka">{getTranslation('MAP_CRYSTAL_CAVES_DESC', language) || 'Blue treasures and slippery ice patches!'}</p>
+3039:                className="group relative bg-gradient-to-br from-purple-600/20 to-pink-800/20 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-8 rounded-[2.5rem] hover:border-purple-500/50 transition-all text-left overflow-hidden shadow-xl"
+3044:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-2">{getTranslation('MAP_SPEED_TRAINING', language) || 'SPEED TRAINING'}</h3>
+3045:                <p className="text-slate-500 dark:text-slate-400 font-fredoka">{getTranslation('MAP_SPEED_TRAINING_DESC', language) || 'Test your reflexes and speed!'}</p>
+3059:                className="group relative bg-gradient-to-br from-blue-500/20 to-indigo-800/20 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-8 rounded-[2.5rem] hover:border-blue-400/50 transition-all text-left overflow-hidden shadow-xl"
+3064:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-2">{getTranslation('MAP_MORO_KART', language) || 'MORO KART'}</h3>
+3065:                <p className="text-slate-500 dark:text-slate-400 font-fredoka">{getTranslation('MAP_MORO_KART_DESC', language) || 'Race through the obstacles!'}</p>
+3078:                className="group relative bg-gradient-to-br from-lime-600/20 to-green-800/20 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-8 rounded-[2.5rem] hover:border-lime-500/50 transition-all text-left overflow-hidden shadow-xl"
+3083:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-2">{getTranslation('MAP_KICKING_TRAINING', language) || 'KICKING TRAINING'}</h3>
+3084:                <p className="text-slate-500 dark:text-slate-400 font-fredoka">{getTranslation('MAP_KICKING_TRAINING_DESC', language) || 'Master the art of kicking!'}</p>
+3093:                className="group relative bg-gradient-to-br from-slate-600/20 to-slate-800/20 backdrop-blur-md border border-slate-900/10 dark:border-white/10 p-8 rounded-[2.5rem] hover:border-slate-500/50 transition-all text-left shadow-xl"
+3098:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-2">{getTranslation('CUSTOM_MAPS', language) || 'CUSTOM MAPS'}</h3>
+3099:                <p className="text-slate-500 dark:text-slate-400 font-fredoka">{getTranslation('CUSTOM_MAPS_DESC', language) || 'Play your saved custom maps.'}</p>
+3100:                <div className="mt-4 inline-flex items-center gap-2 text-slate-600 dark:text-slate-300 font-fredoka">
+3110:          <div className="fixed inset-0 z-[100] bg-white/90 dark:bg-black/90 backdrop-blur-md flex items-center justify-center p-4 animate-in fade-in duration-300">
+3111:            <div className="bg-slate-50 dark:bg-slate-900 border border-slate-900/20 dark:border-white/20 rounded-[3rem] p-10 max-w-md w-full text-center shadow-2xl">
+3115:              <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-4">{getTranslation('INVITE_FRIEND_TITLE', language)}</h3>
+3116:              <p className="text-slate-500 dark:text-slate-400 mb-8">{getTranslation('SHARE_LINK_DESC', language)}</p>
+3118:              <div className="bg-slate-900/5 dark:bg-white/5 border border-slate-900/10 dark:border-white/10 rounded-2xl p-4 mb-8 flex items-center justify-between gap-4">
+3149:                  className={`${inviteLinkCopied ? 'bg-green-600 hover:bg-green-500' : 'bg-blue-600 hover:bg-blue-500'} text-slate-900 dark:text-white p-3 rounded-xl transition-all`}
+3163:                className="w-full bg-slate-900 dark:bg-white text-slate-900 font-fredoka py-5 rounded-2xl text-xl shadow-[0_6px_0_#cbd5e1] hover:translate-y-1 active:translate-y-3 active:shadow-none transition-all"
+3205:                    <h1 className="text-5xl font-fredoka text-slate-900 dark:text-white tracking-[0.2em] uppercase mb-4 drop-shadow-lg">
+3252:                     <span className="text-4xl font-fredoka text-slate-900 dark:text-white">M studio</span>
+3255:                  <div className="bg-slate-50/60 dark:bg-slate-900/60 backdrop-blur-md border border-slate-900/10 dark:border-white/10 rounded-[2rem] p-8 w-full flex flex-col items-center mb-8 shadow-2xl">
+3259:                    <h2 className="text-4xl font-fredoka text-slate-900 dark:text-white mb-6 text-center drop-shadow-md">
+3273:                    <div className="flex justify-between w-full text-sm font-fredoka text-slate-500 dark:text-slate-400">
+3275:                      <span className="text-slate-900 dark:text-white font-bold">{Math.round(loadingProgress)}%</span>
+3287:                      <p className="text-slate-600 dark:text-slate-300 font-fredoka leading-relaxed">
+3315:        <div className="fixed inset-0 z-[70] bg-white/80 dark:bg-black/80 backdrop-blur-xl flex items-center justify-center p-4">
+3322:            className="bg-slate-50 dark:bg-slate-900 border border-slate-900/20 dark:border-white/20 rounded-[4rem] w-full max-w-md p-12 relative ios-shading max-h-[90vh] flex flex-col"
+3324:            <button onClick={() => { setShowSettings(false); playSound(1000); }} className="absolute top-8 right-8 w-12 h-12 bg-slate-900/10 dark:bg-white/10 rounded-full text-slate-900 dark:text-white hover:bg-slate-900/20 dark:bg-white/20 transition-all shadow-sm"><i className="fa-solid fa-xmark"></i></button>
+3325:            <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-12 text-center drop-shadow-sm">{getTranslation('SETTINGS', language)}</h3>
+3327:            <div className="flex flex-col gap-8 overflow-y-auto pr-4 flex-grow bg-slate-900/5 dark:bg-black/20 rounded-[2rem] p-4 settings-inner-shadow border border-slate-900/5 dark:border-white/5">
+3335:                  className="w-full py-4 px-6 rounded-2xl bg-slate-900/5 dark:bg-white/5 border-2 border-slate-900/10 dark:border-white/10 text-slate-900 dark:text-white font-fredoka focus:border-purple-500 outline-none transition-all"
+3340:                <div className="w-32 h-32 rounded-[2rem] bg-slate-100 dark:bg-slate-800 border-4 border-slate-900/10 dark:border-white/10 overflow-hidden shadow-2xl relative group">
+3350:                    className="absolute inset-0 bg-white/50 dark:bg-black/50 opacity-0 group-hover:opacity-100 transition-opacity flex items-center justify-center text-slate-900 dark:text-white text-2xl"
+3364:                <span className="text-slate-900 dark:text-white font-fredoka text-xl">{getTranslation('SOUND_FX', language)}</span>
+3367:                  className={`w-20 h-10 rounded-full relative transition-all ${soundEnabled ? 'bg-purple-600' : 'bg-slate-200 dark:bg-slate-700'}`}
+3369:                  <div className={`absolute top-1 w-8 h-8 bg-slate-900 dark:bg-white rounded-full transition-all ${soundEnabled ? 'left-11' : 'left-1'}`} />
+3375:                  <span className="text-slate-900 dark:text-white font-fredoka text-xl">{getTranslation('MUSIC', language)}</span>
+3378:                    className={`w-20 h-10 rounded-full relative transition-all ${musicEnabled ? 'bg-blue-600' : 'bg-slate-200 dark:bg-slate-700'}`}
+3380:                    <div className={`absolute top-1 w-8 h-8 bg-slate-900 dark:bg-white rounded-full transition-all ${musicEnabled ? 'left-11' : 'left-1'}`} />
+3384:                  <div className="flex flex-col gap-2 bg-slate-900/5 dark:bg-white/5 p-3 rounded-xl border border-slate-900/10 dark:border-white/10">
+3386:                      <span className="text-sm font-fredoka text-slate-600 dark:text-slate-300">Custom Background Music</span>
+3410:                      <div className="flex items-center gap-2 text-[10px] text-blue-500 dark:text-blue-400 font-black truncate max-w-full">
+3421:                  <span className="text-slate-900 dark:text-white font-fredoka text-xl">{isDarkMode ? 'Dark Mode' : 'Light Mode'}</span>
+3434:                  <span className="text-slate-900 dark:text-white font-fredoka text-xl">{getTranslation('LIQUID_GLASS', language)}</span>
+3438:                  className={`w-20 h-10 rounded-full relative transition-all ${isLiquidGlass ? 'bg-cyan-500' : 'bg-slate-200 dark:bg-slate-700'}`}
+3447:                  <span className="text-slate-900 dark:text-white font-fredoka text-xl">{getTranslation('IOS_ANIMATIONS', language)}</span>
+3451:                  className={`w-20 h-10 rounded-full relative transition-all ${ios26Animations ? 'bg-blue-500 shadow-[0_0_15px_rgba(59,130,246,0.3)]' : 'bg-slate-200 dark:bg-slate-700'}`}
+3462:                       <span className="text-slate-900 dark:text-white font-fredoka text-xl">{getTranslation('GOLD_BACKGROUND', language)}</span>
+3468:                    className={`w-20 h-10 rounded-full relative transition-all ${useGoldBackground ? 'bg-amber-500 shadow-[0_0_15px_rgba(245,158,11,0.5)]' : 'bg-slate-200 dark:bg-slate-700'}`}
+3488:                      className={`py-3 rounded-xl font-fredoka text-sm transition-all border-2 ${language === lang ? 'bg-blue-600 text-slate-900 dark:text-white border-blue-400' : 'bg-slate-900/5 dark:bg-white/5 text-slate-900 dark:text-white border-slate-900/10 dark:border-white/10 hover:bg-slate-900/10 dark:bg-white/10'}`}
+3517:                      className={`py-4 rounded-2xl font-fredoka transition-all border-2 ${selectedDifficulty === diff ? 'bg-slate-900 dark:bg-white text-slate-900 border-white' : 'bg-slate-900/5 dark:bg-white/5 text-slate-900 dark:text-white border-slate-900/10 dark:border-white/10 hover:bg-slate-900/10 dark:bg-white/10'}`}
+3529:                    <span className="text-slate-900 dark:text-white font-fredoka text-lg">3 Hearts Mode</span>
+3543:                    className={`w-16 h-8 rounded-full relative transition-all ${localStorage.getItem('moro_3_hearts_mode') ? 'bg-red-500' : 'bg-slate-200 dark:bg-slate-700'}`}
+3545:                    <div className={`absolute top-1 w-6 h-6 bg-slate-900 dark:bg-white rounded-full transition-all ${localStorage.getItem('moro_3_hearts_mode') ? 'left-9' : 'left-1'}`} />
+3548:                <p className="text-slate-500 dark:text-slate-400 text-xs font-fredoka leading-relaxed">
+3558:                      <span className="text-slate-500 dark:text-slate-400 text-[10px] uppercase font-black">{action}</span>
+3561:                        className={`py-3 rounded-xl font-fredoka text-sm transition-all border-2 ${rebindingKey === action ? 'bg-purple-600 text-slate-900 dark:text-white border-purple-400 animate-pulse' : 'bg-slate-900/5 dark:bg-white/5 text-slate-900 dark:text-white border-slate-900/10 dark:border-white/10 hover:bg-slate-900/10 dark:bg-white/10'}`}
+3583:            <button onClick={() => { localStorage.setItem('moro_language', language); setShowSettings(false); playSound(1200); }} className="w-full mt-12 bg-slate-900 dark:bg-white text-white dark:text-slate-950 font-fredoka py-6 rounded-3xl text-xl hover:bg-slate-100 transition-all">{getTranslation('SAVE_AND_CLOSE', language)}</button>
+3589:        <div className="fixed inset-0 z-[60] bg-white/80 dark:bg-black/80 backdrop-blur-xl flex items-center justify-center p-4">
+3596:            className="bg-slate-50 dark:bg-slate-900 border border-slate-900/20 dark:border-white/20 rounded-[4rem] w-full max-w-3xl p-12 relative shadow-2xl"
+3598:            <button onClick={() => { setShowWardrobe(false); playSound(1000); }} className="absolute top-8 right-8 w-12 h-12 bg-slate-900/10 dark:bg-white/10 rounded-full text-slate-900 dark:text-white hover:bg-slate-900/20 dark:bg-white/20 transition-all shadow-sm"><i className="fa-solid fa-xmark"></i></button>
+3599:            <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-8 text-center drop-shadow-sm">{getTranslation('WARDROBE', language)}</h3>
+3608:                    wardrobeTab === type ? 'bg-purple-600 text-slate-900 dark:text-white' : 'text-slate-500 dark:text-slate-400 hover:text-slate-900 dark:text-white'
+3635:                          ? 'border-white/5 bg-slate-900/5 dark:bg-white/5 hover:bg-slate-900/10 dark:bg-white/10' 
+3636:                          : 'border-white/5 bg-slate-900/5 dark:bg-white/5 opacity-40 cursor-not-allowed'
+3642:                        <div className="absolute -top-2 -left-2 bg-amber-500 text-slate-900 dark:text-white text-[8px] font-black px-2 py-0.5 rounded-full shadow-lg">
+3647:                    <p className="text-[10px] font-black uppercase mt-4 text-slate-500 dark:text-slate-400">{getTranslation(`ITEM_${char.id.toUpperCase().replace(/-/g, '_')}_NAME`, language) || char.name}</p>
+3665:                          ? 'border-white/5 bg-slate-900/5 dark:bg-white/5 hover:bg-slate-900/10 dark:bg-white/10' 
+3666:                          : 'border-white/5 bg-slate-900/5 dark:bg-white/5 opacity-40 cursor-not-allowed'
+3672:                        <div className="absolute -top-2 -left-2 bg-amber-500 text-slate-900 dark:text-white text-[8px] font-black px-2 py-0.5 rounded-full shadow-lg">
+3677:                    <p className="text-[10px] font-black uppercase mt-4 text-slate-500 dark:text-slate-400">{getTranslation(`ITEM_${item.id.toUpperCase().replace(/-/g, '_')}_NAME`, language) || item.name}</p>
+3695:                          ? 'border-white/5 bg-slate-900/5 dark:bg-white/5 hover:bg-slate-900/10 dark:bg-white/10' 
+3696:                          : 'border-white/5 bg-slate-900/5 dark:bg-white/5 opacity-40 cursor-not-allowed'
+3702:                        <div className="absolute -top-2 -left-2 bg-amber-500 text-slate-900 dark:text-white text-[8px] font-black px-2 py-0.5 rounded-full shadow-lg">
+3707:                    <p className="text-[10px] font-black uppercase mt-4 text-slate-500 dark:text-slate-400">{getTranslation(`ITEM_${item.id.toUpperCase().replace(/-/g, '_')}_NAME`, language) || item.name}</p>
+3716:                    <h4 className="text-slate-900 dark:text-white font-fredoka mb-2">Backpack Color</h4>
+3727:                        <span className="text-slate-500 dark:text-slate-400 text-sm">Hex:</span>
+3749:                              ? 'border-white/5 bg-slate-900/5 dark:bg-white/5 hover:bg-slate-900/10 dark:bg-white/10' 
+3750:                              : 'border-white/5 bg-slate-900/5 dark:bg-white/5 opacity-40 cursor-not-allowed'
+3756:                            <div className="absolute -top-2 -left-2 bg-amber-500 text-slate-900 dark:text-white text-[8px] font-black px-2 py-0.5 rounded-full shadow-lg">
+3761:                        <p className="text-[10px] font-black uppercase mt-4 text-slate-500 dark:text-slate-400">{getTranslation(`ITEM_${item.id.toUpperCase().replace(/-/g, '_')}_NAME`, language) || item.name}</p>
+3777:                        : 'border-white/5 bg-slate-900/5 dark:bg-white/5 hover:bg-slate-900/10 dark:bg-white/10' 
+3783:                    <p className="text-[10px] font-black uppercase mt-4 text-slate-500 dark:text-slate-400">{getTranslation(`ITEM_${char.id.toUpperCase().replace(/-/g, '_')}_NAME`, language) || char.name}</p>
+3791:                    <h4 className="text-slate-900 dark:text-white font-fredoka mb-2">Hair Color</h4>
+3802:                        <span className="text-slate-500 dark:text-slate-400 text-sm">Hex:</span>
+3821:                            : 'border-white/5 bg-slate-900/5 dark:bg-white/5 hover:bg-slate-900/10 dark:bg-white/10' 
+3827:                        <p className="text-[10px] font-black uppercase mt-4 text-slate-500 dark:text-slate-400">{getTranslation(`ITEM_${item.id.toUpperCase().replace(/-/g, '_')}_NAME`, language) || item.name}</p>
+3837:            <button onClick={() => { setShowWardrobe(false); playSound(1200); }} className="w-full mt-12 bg-slate-900 dark:bg-white text-white dark:text-slate-950 font-fredoka py-6 rounded-3xl text-xl hover:bg-slate-100 transition-all">{getTranslation('CONFIRM', language)}</button>
+3854:        <div className="fixed inset-0 z-[80] bg-white/90 dark:bg-black/90 backdrop-blur-2xl flex items-center justify-center p-4 animate-in fade-in duration-300">
+3855:          <div className="bg-slate-50 dark:bg-slate-900 border border-red-500/30 rounded-[3rem] w-full max-w-lg p-10 relative shadow-[0_0_50px_rgba(239,68,68,0.1)]">
+3858:              className="absolute top-6 right-6 w-10 h-10 bg-slate-900/5 dark:bg-white/5 rounded-full text-slate-900 dark:text-white hover:bg-slate-900/10 dark:bg-white/10 transition-all"
+3869:                  <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white">{getTranslation('REPORT_BUG', language)}</h3>
+3872:                <p className="text-slate-500 dark:text-slate-400 text-sm mb-6">Describe the issue you encountered. Your feedback helps us keep Moro Studio safe and fun!</p>
+3878:                  className="w-full h-40 bg-slate-900/5 dark:bg-white/5 border border-slate-900/10 dark:border-white/10 rounded-2xl p-6 text-slate-900 dark:text-white font-fredoka text-lg focus:outline-none focus:border-red-500 transition-all resize-none mb-8"
+3888:                  className="w-full bg-red-600 text-slate-900 dark:text-white font-fredoka py-6 rounded-3xl text-xl hover:bg-red-500 transition-all disabled:opacity-50 disabled:cursor-not-allowed shadow-[0_8px_0_#991b1b] active:translate-y-2 active:shadow-none"
+3903:                <h3 className="text-2xl font-fredoka text-slate-900 dark:text-white mb-6 leading-tight">
+3908:                  className="bg-slate-900 dark:bg-white text-white dark:text-slate-950 font-fredoka px-12 py-4 rounded-2xl hover:bg-slate-100 transition-all"
+3920:          <div className="bg-slate-50 dark:bg-slate-900 border border-slate-900/20 dark:border-white/20 rounded-[3.5rem] p-12 max-w-lg w-full text-center shadow-[0_0_50px_rgba(0,0,0,0.5)] relative overflow-hidden">
+3930:            <h3 className="text-4xl font-fredoka text-slate-900 dark:text-white mb-6 tracking-tight">ACCOUNT REQUIRED</h3>
+3931:            <p className="text-slate-600 dark:text-slate-300 text-lg mb-10 font-fredoka leading-relaxed">
+3941:                className="w-full bg-[#00a4ef] text-slate-900 dark:text-white font-fredoka py-5 rounded-[2rem] text-xl flex items-center justify-center gap-4 hover:bg-[#00a4ef]/90 transition-all shadow-xl"
+3949:                className="mt-4 text-slate-500 font-fredoka hover:text-slate-900 dark:text-white transition-all text-lg"
+3960:          <div className="bg-slate-50 dark:bg-slate-900 border border-slate-900/20 dark:border-white/20 rounded-[3rem] p-10 max-w-sm w-full text-center shadow-xl">
+3961:            <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white mb-8">Are you a boy or a girl?</h3>
+4005:                className="mt-4 text-slate-500 hover:text-slate-900 dark:text-white font-fredoka"
+4078:              className="bg-slate-50 dark:bg-slate-900 border border-slate-900/20 dark:border-white/20 rounded-[3rem] p-8 max-w-sm w-full shadow-2xl relative z-10 overflow-hidden"
+4082:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white flex items-center gap-3">
+4088:                  className="text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors"
+4098:                    <p className="text-slate-900 dark:text-white font-fredoka text-sm">
+4121:                    <div className="w-20 h-20 bg-slate-900/5 dark:bg-white/5 rounded-full flex items-center justify-center mx-auto mb-4">
+4128:                    <div key={idx} className="bg-white dark:bg-black/40 border border-slate-900/5 dark:border-white/5 p-4 rounded-2xl flex gap-4 items-start hover:border-blue-500/30 transition-all group">
+4133:                         <p className="text-slate-900 dark:text-white font-fredoka text-sm mb-1">{notif.title}</p>
+4144:                className="w-full mt-6 bg-slate-900/5 dark:bg-white/5 hover:bg-slate-900/10 dark:hover:bg-white/10 text-slate-500 py-3 rounded-xl text-sm font-fredoka transition-all"
+4155:          <div className="fixed inset-0 z-[120] flex items-center justify-center p-4 bg-white/40 dark:bg-black/40 backdrop-blur-xl animate-in fade-in duration-300">
+4160:              className="bg-slate-50 dark:bg-slate-900 border border-slate-900/20 dark:border-white/20 rounded-[3rem] p-8 max-w-sm w-full shadow-2xl overflow-hidden relative"
+4164:                <h3 className="text-3xl font-fredoka text-slate-900 dark:text-white">{getTranslation('ADD_FRIEND', language)}</h3>
+4167:                  className="text-slate-500 hover:text-slate-900 dark:hover:text-white transition-colors"
+4180:                    className="w-full bg-white dark:bg-black border border-slate-900/10 dark:border-white/10 rounded-2xl px-6 py-4 text-slate-900 dark:text-white font-fredoka text-xl focus:outline-none focus:border-blue-500 transition-colors"
+4206:                        ? 'bg-slate-900/5 dark:bg-white/5 text-slate-500 cursor-not-allowed'
+4207:                        : 'bg-blue-600 hover:bg-blue-500 text-slate-900 dark:text-white shadow-[0_6px_0_#1e40af] hover:translate-y-1 active:translate-y-3 active:shadow-none'
+4216:                    <div className="pt-6 border-t border-slate-900/10 dark:border-white/10 mt-6">
+4223:                             className="flex-1 bg-slate-900/5 dark:bg-white/5 border border-slate-900/10 dark:border-white/10 rounded-xl px-4 py-2 text-slate-700 dark:text-slate-300 font-mono text-xs"
+4231:                              className="bg-slate-200 dark:bg-slate-800 hover:bg-slate-300 dark:hover:bg-slate-700 text-slate-700 dark:text-slate-300 px-4 py-2 rounded-xl text-xs font-bold"
